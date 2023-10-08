@@ -154,19 +154,15 @@ body {
 }
 
   .modal_close_button {
-    position: absolute;
-    top: 5px;
-    right: 8px;
+    font-size: 20px;
+    background-color: transparent;
+    float: right;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-right: 8px;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid #0000001A;
 }
   
   .modal_class.is-hidden {
@@ -602,7 +598,7 @@ ul.team_qualities {
     letter-spacing: 0.03em;
     color:#f5f4fa;
     background: #2196F3E5;
-    animation: 1s slidein;
+    animation: 0.5s slidein;
 }
 
 @keyframes slidein {
