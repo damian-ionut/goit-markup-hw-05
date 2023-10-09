@@ -44,19 +44,6 @@ body {
     font-family: var(--primary-font);
 }
 
-.nav_item_ul .current::after {
-    position: absolute;
-    width: 78px;
-    height: 4px;
-    top: 105px;
-    border-radius: 2px;
-    content: "";
-    background-color: var(--secondary-color);
-    opacity: 1;
-    display:flex;
-    margin-left: -10px;
-}
-
 .main_nav {
     background-color: #fff;
     overflow: hidden;
@@ -83,6 +70,7 @@ body {
     list-style-type: none;
     justify-content: space-between; 
 }
+
 
 .div_nav {
     display: flex;
@@ -154,7 +142,7 @@ body {
 }
 
   .modal_close_button {
-    font-size: 35px;  
+    font-size: 25px;  
     background-color: transparent;
     float: right;
     border-radius: 50%;
@@ -168,7 +156,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-  
+
   .modal_class.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -592,30 +580,19 @@ ul.team_qualities {
     
 }
 
+
 .portofolio_paragraph {
-    display: none;
-    position: absolute;
+    position:absolute;
     font-family: var(--primary-font);
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color:#f5f4fa;
-    background: #2196F3E5;
-    animation: 0.5s slidein;
-}
-
-@keyframes slidein {
-    from
-    { margin-top: 100%; }
-    to
-    { margin-bottom: 0%; }
-}
-
-  
-  .portofolio_paragraph {
-    transform: translatey(0);
-
+    color:#fff;
+    background-color:rgba(33, 150, 243, 0.9);
+    transform:translatey(133%);
+    transition: transform 250ms ease-in-out;
+        
 }
 
 .portofolio_paragraph_div {
@@ -623,17 +600,15 @@ ul.team_qualities {
     overflow: hidden;
 }
 
-
-.portofolio_paragraph p{
-    width: 100%;
-    height: 100%;
-    padding-left: 25px;
-    padding-top: 45px;
-    padding-bottom:72px;
+.gallery_list:hover .portofolio_paragraph {
+    transform: translatey(0);
 }
 
-.gallery_list:hover .portofolio_paragraph {
-    display: block;
+.portofolio_paragraph p {
+    padding-left: 24px;
+    padding-top: 63px;
+    padding-bottom:91px;
+    width:322px;
 }
 
 
